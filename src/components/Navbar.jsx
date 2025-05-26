@@ -4,7 +4,7 @@ function Navbar() {
   return (
     <nav>
       {/* Navbar content will go here */}
-      <p>Navbar</p>
+      <p className='text-center'>Navbar</p>
     </nav>
   );
 }
