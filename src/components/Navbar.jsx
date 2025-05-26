@@ -1,12 +1,11 @@
-import React from 'react';
+import React from "react";
+import { ShoppingCart, Search } from "lucide-react";
 
-function Navbar() {
+export default function Navbar() {
   return (
     <nav>
       {/* Navbar content will go here */}
-      <p className='text-center'>Navbar</p>
+      <p>Navbar</p>
     </nav>
   );
 }
-
-export default Navbar;
