@@ -1,8 +1,9 @@
-import React from "react";
+import React from "react"; 
+
 
 export default function Hero() {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between bg-[#fcecd8] p-8">
+    <div className="flex flex-col md:flex-row items-center mt-10 justify-between bg-[#fcecd8] p-8 ">
       <div className="md:w-1/2 text-center md:text-left space-y-4">
         <h1 className="text-4xl font-bold">Elevate Your Lifestyle with Shopwave</h1>
         <p className="text-gray-700">
@@ -16,8 +17,8 @@ export default function Hero() {
       </div>
       <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center">
         <img
-          src="/shopwave-hero.jpg"
-          alt="Woman using tablet"
+          src="/assets/hero-img.jpg"
+          alt="Hero image"
           className="rounded-lg max-w-full h-auto"
         />
       </div>

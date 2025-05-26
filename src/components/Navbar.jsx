@@ -3,7 +3,7 @@ import { ShoppingCart, Search } from "lucide-react";
 
 export default function Navbar() {
   return (
-    <nav className="bg-[#fcecd8] fixed py-4 px-6 flex items-center justify-between shadow-sm">
+    <nav className="bg-[#fcecd8] fixed py-4 px-6 flex items-center justify-between shadow-sm w-full">
       <div className="text-xl font-bold">Shopwave</div>
       <ul className="flex items-center gap-6 text-sm font-medium text-gray-800">
         <li><a href="#">Home</a></li>
