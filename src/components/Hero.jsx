@@ -19,13 +19,7 @@ export default function Hero() {
           Explore Now
         </button>
       </div>
-      <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center">
-
-        <img
-          src="/assets/hero-img.jpg"
-          alt="Hero image"
-          className="rounded-lg max-w-full h-auto"
-        />
+      
 
         <div className="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
           <img
@@ -38,7 +32,7 @@ export default function Hero() {
       </div>
     </div>
 
-    </div>
+  
 
   );
   

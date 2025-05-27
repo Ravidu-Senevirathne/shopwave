@@ -5,6 +5,12 @@ import './App.css'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import LimitedTimeTicker from './components/LimitedTimeTicker'
+import Home from './pages/Home'
+import OurStory from './components/OurStory'
+import Footer from './components/Footer'
+import FollowUs from './components/FollowUs'
+
+
 
 function App() {
  
@@ -14,7 +20,11 @@ function App() {
      <Navbar/>
      <Hero/>
      <LimitedTimeTicker/>
-      
+     <Home/>
+     <OurStory/>
+     <FollowUs/>
+     <Footer/>
+     
     </>
   )
 }
