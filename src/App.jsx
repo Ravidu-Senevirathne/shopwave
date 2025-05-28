@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 import './App.css'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
@@ -8,29 +8,29 @@ import Home from './pages/Home'
 import OurStory from './components/OurStory'
 import Footer from './components/Footer'
 import FollowUs from './components/FollowUs'
-import AdminDashboard from './pages/AdminDashboard'
-import VendorDashboard from './pages/VendorDashboard'
+import AdminDashboard from './pages/Admin/Dashboard'
+import VendorDashboard from './pages/Vendor/Dashboard'
 
+const MainLayout = () => (
+  <>
+    <Navbar />
+    <Hero/>
+    <LimitedTimeTicker/>
+    <Home/>
+    <OurStory/>
+    <FollowUs/>
+    <Footer/>
+  </>
+)
 
 function App() {
   return (
     <Router>
-      <Navbar/>
       <Routes>
-        <Route path="/" element={
-          <>
-            <Hero/>
-            <LimitedTimeTicker/>
-            <Home/>
-            <OurStory/>
-            <FollowUs/>
-          </>
-        } />
-
+        <Route path="/" element={<MainLayout />} />
         <Route path="/admin-dashboard" element={<AdminDashboard />} />
         <Route path='/vendor-dashboard' element={<VendorDashboard/>}/>
       </Routes>
-      <Footer/>
     </Router>
   )
 }
