@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
@@ -9,23 +8,27 @@ import Home from './pages/Home'
 import OurStory from './components/OurStory'
 import Footer from './components/Footer'
 import FollowUs from './components/FollowUs'
-
-
+import AdminDashboard from './pages/AdminDashboard'
 
 function App() {
- 
-
   return (
-    <>
-     <Navbar/>
-     <Hero/>
-     <LimitedTimeTicker/>
-     <Home/>
-     <OurStory/>
-     <FollowUs/>
-     <Footer/>
-     
-    </>
+    <Router>
+      <Navbar/>
+      <Routes>
+        <Route path="/" element={
+          <>
+            <Hero/>
+            <LimitedTimeTicker/>
+            <Home/>
+            <OurStory/>
+            <FollowUs/>
+          </>
+        } />
+        
+        <Route path="/admin-dashboard" element={<AdminDashboard />} />
+      </Routes>
+      <Footer/>
+    </Router>
   )
 }
 
