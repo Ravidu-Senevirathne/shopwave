@@ -9,6 +9,7 @@ import OurStory from './components/OurStory'
 import Footer from './components/Footer'
 import FollowUs from './components/FollowUs'
 import AdminDashboard from './pages/AdminDashboard'
+import VendorDashboard from './pages/VendorDashboard'
 
 function App() {
   return (
@@ -24,8 +25,9 @@ function App() {
             <FollowUs/>
           </>
         } />
-        
+
         <Route path="/admin-dashboard" element={<AdminDashboard />} />
+        <Route path='/vendor-dashboard' element={<VendorDashboard/>}/>
       </Routes>
       <Footer/>
     </Router>
