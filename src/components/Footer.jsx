@@ -2,12 +2,12 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-gray-300 py-12 px-4">
+    <footer className="bg-[#fcecd8] text-black py-12 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Left Column - Follow Us */}
           <div>
-            <h3 className="text-xl font-semibold text-white mb-4">Follow Us</h3>
+            
             <div className="flex space-x-4">
               {/* Social Icons would go here */}
               <a href="#" className="text-gray-400 hover:text-white transition">
@@ -27,7 +27,7 @@ const Footer = () => {
 
           {/* Middle Column - Contact Info */}
           <div>
-            <h3 className="text-xl font-semibold text-white mb-4">Shopwave</h3>
+            <h3 className="text-xl font-semibold text-black mb-4">Shopwave</h3>
             <ul className="space-y-2">
               <li>
                 <a href="tel:123-456-7890" className="hover:text-white transition">123-456-7890</a>
@@ -47,7 +47,7 @@ const Footer = () => {
 
           {/* Right Column - Links */}
           <div>
-            <h3 className="text-xl font-semibold text-white mb-4">Quick Links</h3>
+            <h3 className="text-xl font-semibold text-black mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
                 <a href="#" className="hover:text-white transition">Privacy Policy</a>

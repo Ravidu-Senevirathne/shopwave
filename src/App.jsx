@@ -12,6 +12,7 @@ import FollowUs from './components/FollowUs'
 
 
 
+
 function App() {
  
 
@@ -24,6 +25,7 @@ function App() {
      <OurStory/>
      <FollowUs/>
      <Footer/>
+    
      
     </>
   )
