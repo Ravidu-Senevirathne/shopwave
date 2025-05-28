@@ -23,13 +23,13 @@ function App() {
             <Home/>
             <OurStory/>
             <FollowUs/>
+            <Footer/>
           </>
         } />
 
         <Route path="/admin-dashboard" element={<AdminDashboard />} />
         <Route path='/vendor-dashboard' element={<VendorDashboard/>}/>
       </Routes>
-      <Footer/>
     </Router>
   )
 }
