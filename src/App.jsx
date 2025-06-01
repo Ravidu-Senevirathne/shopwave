@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
@@ -11,8 +11,10 @@ import FollowUs from './components/FollowUs'
 import AdminDashboard from './pages/Admin/Dashboard'
 import VendorDashboard from './pages/Vendor/Dashboard'
 import Login from './pages/Login'
-
 import SignupForm from './pages/SignupForm'
+import Welcome from './pages/Welcome'
+import PromotionPage from './pages/PromotionPage'
+import BestSellers from './pages/BestSellers'
 
 const MainLayout = () => (
   <>
@@ -30,26 +32,14 @@ function App() {
   return (
     <Router>
       <Routes>
-
         <Route path="/" element={<MainLayout />} />
-
-        <Route path="/" element={
-          <>
-            <Hero/>
-            <LimitedTimeTicker/>
-            <Home/>
-            <OurStory/>
-            <FollowUs/>
-            <Footer/>
-          </>
-        } />
-
+        <Route path="/welcome" element={<Welcome />} />
+        <Route path="/promotions" element={<PromotionPage />} />
+        <Route path="/best-sellers" element={<BestSellers />} />
         <Route path="/admin-dashboard" element={<AdminDashboard />} />
         <Route path='/vendor-dashboard' element={<VendorDashboard/>}/>
         <Route path="/signup" element={<SignupForm />} />
         <Route path="/login" element={<Login/>} />
-        
-        
       </Routes>
     </Router>
   )
