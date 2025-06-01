@@ -10,6 +10,9 @@ import Footer from './components/Footer'
 import FollowUs from './components/FollowUs'
 import AdminDashboard from './pages/Admin/Dashboard'
 import VendorDashboard from './pages/Vendor/Dashboard'
+import Login from './pages/Login'
+
+import SignupForm from './pages/SignupForm'
 
 const MainLayout = () => (
   <>
@@ -30,6 +33,10 @@ function App() {
         <Route path="/" element={<MainLayout />} />
         <Route path="/admin-dashboard" element={<AdminDashboard />} />
         <Route path='/vendor-dashboard' element={<VendorDashboard/>}/>
+        <Route path="/signup" element={<SignupForm />} />
+        <Route path="/login" element={<Login/>} />
+        
+        
       </Routes>
     </Router>
   )
