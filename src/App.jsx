@@ -30,7 +30,20 @@ function App() {
   return (
     <Router>
       <Routes>
+
         <Route path="/" element={<MainLayout />} />
+
+        <Route path="/" element={
+          <>
+            <Hero/>
+            <LimitedTimeTicker/>
+            <Home/>
+            <OurStory/>
+            <FollowUs/>
+            <Footer/>
+          </>
+        } />
+
         <Route path="/admin-dashboard" element={<AdminDashboard />} />
         <Route path='/vendor-dashboard' element={<VendorDashboard/>}/>
         <Route path="/signup" element={<SignupForm />} />
