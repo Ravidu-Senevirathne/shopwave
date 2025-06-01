@@ -12,3 +12,32 @@
 .animate-marquee {
   animation: marquee 10s linear infinite;
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes inputFocus {
+  from {
+    background-color: rgb(249 250 251);
+  }
+  to {
+    background-color: rgb(255 255 255);
+  }
+}
+
+.group input:focus {
+  animation: inputFocus 0.3s ease-in-out forwards;
+  box-shadow: 0 0 0 2px rgba(252, 236, 216, 0.2);
+}
