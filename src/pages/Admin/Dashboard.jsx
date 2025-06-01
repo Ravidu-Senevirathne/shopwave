@@ -1,17 +1,13 @@
 import React from 'react'
-import Header from '../../components/Admin/Header'
+import AdminLayout from '../../components/Admin/Layout'
 import SummaryCard from '../../components/Admin/SummaryCard'
 import OrdersTable from '../../components/Admin/OrdersTable'
 import SalesChart from '../../components/Admin/SalesChart'
 
-
-
-
 function Dashboard() {
   return (
-    <div className="min-h-screen bg-[#fcecd8]">
-      <Header/>
-      <div className="container mx-auto px-4 py-8">
+    <AdminLayout>
+      <div className="space-y-6">
         <h1 className="text-2xl font-bold mb-6">Dashboard Overview</h1>
         <SummaryCard/>
         <div className="mt-8">
@@ -21,8 +17,8 @@ function Dashboard() {
           <OrdersTable/>
         </div>
       </div>
-    </div>
-  )
+    </AdminLayout>
+  );
 }
 
 export default Dashboard
