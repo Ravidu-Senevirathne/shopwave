@@ -33,8 +33,6 @@ function App() {
 }
 
 
-//changed the comment 
 
-//added comment
 
 export default App
