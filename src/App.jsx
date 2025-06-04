@@ -33,4 +33,7 @@ function App() {
 }
 <<<<<<< Updated upstream
 
+=======
+//changed the comment 
+>>>>>>> Stashed changes
 export default App
