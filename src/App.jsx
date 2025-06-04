@@ -31,5 +31,6 @@ function App() {
     </>
   )
 }
+<<<<<<< Updated upstream
 
 export default App
