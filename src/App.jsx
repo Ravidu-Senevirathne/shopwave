@@ -31,9 +31,10 @@ function App() {
     </>
   )
 }
-<<<<<<< Updated upstream
 
-=======
+
 //changed the comment 
->>>>>>> Stashed changes
+
+//added comment
+
 export default App
